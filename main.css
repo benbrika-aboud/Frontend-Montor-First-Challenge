@@ -1,0 +1,231 @@
+ /* -----------------------------
+            fonts
+ ----------------------------- */
+ @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+
+ /* -----------------------------
+            global
+ ----------------------------- */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* -------------------------------
+            header
+------------------------------- */
+
+.header {
+    width: 100%;
+    background: linear-gradient(to bottom,rgba(255, 255, 255,0) 10%,rgba(255, 255, 255,1) 90%), url("./img/bg-header-desktop.png") center top 50% /cover no-repeat;
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 700px) {
+    .header {
+        background: linear-gradient(to bottom,rgba(255, 255, 255,0),rgba(255, 255, 255,0.7)), url("./img/bg-header-mobile.png") center top 50% /cover no-repeat;
+        padding-top: 10vh;
+    }
+}
+
+.title {
+    font-family: 'Bree Serif', serif;
+    font-size: 3rem;
+    font-weight: lighter;
+    color: rgb(72, 72, 72);
+    margin-bottom: 0;
+    margin-top: 5vh;
+    text-align: center;
+}
+@media (max-width: 700px) {
+    .title {
+        font-size: 2rem;
+        width: 80%;
+    }
+}
+
+.description {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    color: rgb(189, 188, 188);
+    width: 50%;
+    text-align: center;
+}
+@media (max-width: 700px) {
+    .description {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+}
+
+.menu {
+    margin-bottom: 5vh;
+}
+@media (max-width: 700px) {
+    .menu {
+        margin-top: 5vh;
+        margin-bottom: 15vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.menu__button {
+    color: white;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 15px;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+@media (max-width: 700px) {
+    .menu__button {
+        color: white;
+        padding: 1rem 3rem;
+        width: 80%;
+    }
+}
+
+.green {
+    background: rgb(31, 185, 151);
+    box-shadow: 1px 1px 5px  rgb(0, 75, 59);
+}
+.green:hover {
+    background: rgb(80, 214, 185);
+}
+.purple {
+    background: rgb(95, 129, 255);
+    box-shadow: 1px 1px 5px  rgb(21, 36, 92);
+}
+.purple:hover {
+    background: rgb(140, 165, 255);
+}
+.title2 {
+    font-family: 'Bree Serif', serif;
+    font-size: 2rem;
+    font-weight: lighter;
+    color: rgb(72, 72, 72);
+    margin-bottom: 0;
+    margin-top: 5vh;
+    text-align: center;
+}
+@media (max-width: 700px) {
+    .title2 {
+        font-size: 1.8rem;
+        width: 80%;
+    }
+}
+
+
+/* -------------------------------
+            Section 1
+------------------------------- */
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 10vh auto;
+}
+@media (max-width: 1000px) {
+    .section1 {
+        flex-direction: column;
+        width: 90%;
+    }
+}
+
+.section1 .image {
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section1 .image img {
+    height: 40vh;
+}
+
+@media (max-width: 1200px) {
+    .section1 .image img {
+        height: 35vh;
+    }
+}
+@media (max-width: 1000px) {
+    .section1 .image {
+        margin-bottom: 10vh;
+    }
+    .section1 .image img {
+        height: 35vh;
+    }
+}
+
+.section1 .info {
+    width: 40%;
+    margin-left: 10%;
+}
+@media (max-width: 1000px) {
+    .section1 .info {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+}
+.section1 .info h3 {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: rgb(72, 72, 72);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.section1 .info p {
+    font-weight: lighter;
+    font-size: 1rem;
+    color: rgb(189, 188, 188);
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+}
+
+
+/* -------------------------------
+            Section 2
+------------------------------- */
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 10vh auto;
+}
+
+@media (max-width: 1000px) {
+    .section2 {
+        width: 100%;
+    }
+}
+
+.section2 .image {
+    width: 70%;
+}
+@media (max-width: 1000px) {
+    .section2 .image {
+        width: 90%;
+    }
+}
+
+.section2 .description {
+    margin-bottom: 10vh;
+}
